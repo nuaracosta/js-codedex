@@ -1,0 +1,40 @@
+// Write code below 💖
+
+//player 
+// 0 = rock; 1 = paper; 2 = scissors
+
+let player = 0;
+
+//computer variable 
+let computer = Math.floor(Math.random() * 3);
+
+//if conditional for screen 
+if (player == 0){
+  console.log("Player picked: Rock");
+} else if (player == 1){
+  console.log("Player picked: Paper");
+} else { // refine this later 
+  console.log("Player picked: Scissors");
+}
+
+//if conditional for screen 
+if (computer == 0){
+  console.log("Computer picked: Rock");
+} else if (computer == 1){
+  console.log("Computer picked: Paper");
+} else { // refine this later 
+  console.log("Computer picked: Scissors");
+}
+
+//conditionals for comparison 
+//reminder: Rock (0) beats Scissors (2).
+//Scissors (2) beat Paper (1).
+//Paper (1) beats Rock (0).
+
+if (player == computer){
+  console.log("It's a tie.");
+} else if ((player == 0 && computer == 2) || (player == 2 && computer == 1) || (player == 1 && computer == 0)){
+  console.log("The Player Won!");
+} else {
+  console.log("The Computer Won!");
+}
